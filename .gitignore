@@ -1,0 +1,4 @@
+# source files
+/dist
+# NPM package manager
+package-lock.json
