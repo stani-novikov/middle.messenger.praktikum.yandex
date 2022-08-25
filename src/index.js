@@ -15,6 +15,22 @@ const contextMap = {
 
 function renderPage(page, context) {
     rootElement.innerHTML = pagesMap[page](context);
+    setInputCallback();
+}
+
+function setInputCallback() {
+    const fields = document.querySelectorAll('.field__input');
+    if (fields && fields.length) {
+        fields.forEach((el) => {
+            el.addEventListener('blur', (e) => {
+                if (e.target.value !== '') {
+                    e.target.classList.add('field__active')
+                } else {
+                    e.target.classList.remove('field__active')
+                }
+            })
+        })
+    }
 }
 
 window.addEventListener('DOMContentLoaded', () => {;
@@ -26,6 +42,6 @@ window.addEventListener('click', (e) => {
     const path = e.target.pathname;
     if (path !== undefined) {
         const newPath = path.split('/')[1];
-        renderPage(newPath, contextMap[`${newPath}_context`])
+        renderPage(newPath, contextMap[`${newPath}_context`]);
     }
 })

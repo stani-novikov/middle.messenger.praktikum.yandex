@@ -5,8 +5,8 @@
         <form action="#">
             {{#each fields}}
                 <div class="field">
-                    <label class="field__label" for="{{this.id}}">{{this.label}}</label>
                     <input class="field__input" name="{{this.name}}" type="{{this.type}}" id="{{ this.id }}">
+                    <label class="field__label" for="{{this.id}}">{{this.label}}</label>
                     <span class="field__restriction">Текст ошибки</span>
                 </div>
             {{/each}}
