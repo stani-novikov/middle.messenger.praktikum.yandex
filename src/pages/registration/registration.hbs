@@ -1,0 +1,21 @@
+<div class="modal">
+    <h2 class="modal__header">Регистрация</h2>
+
+    <div class="modal__inputs-container">
+        <form action="#">
+            {{#each fields}}
+                <div class="field">
+                    <input class="field__input" name="{{this.name}}" type="{{this.type}}" id="{{ this.id }}">
+                    <label class="field__label" for="{{this.id}}">{{this.label}}</label>
+                    <span class="field__restriction">Текст ошибки</span>
+                </div>
+            {{/each}}
+
+        </form>
+    </div>
+
+    <div class="modal__controls">
+        <button type="submit" class="button button--primary">Зарегестрироваться</button>
+        <a href="authorization" class="button button--inline">Войти</a>
+    </div>
+</div>

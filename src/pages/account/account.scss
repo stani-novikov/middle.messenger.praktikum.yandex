@@ -1,0 +1,72 @@
+@import "src/styles/variables";
+
+.account {
+  padding-top: 100px;
+}
+
+.account__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 21px;
+  width: 130px;
+  height: 130px;
+  background-color: $light-grey;
+  border-radius: 50%;
+
+}
+
+.account__name {
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  color: $main-text;
+  margin-bottom: 60px;
+}
+
+.account__container {
+  max-width: 510px;
+  margin: 0 auto;
+}
+
+.account__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+}
+
+.account__label {
+  font-size: 13px;
+  color: $main-text;
+}
+
+.account__item-value {
+  font-size: 13px;
+  color: #999999;
+}
+
+.account__buttons {
+  margin-top: 60px;
+}
+
+.account__buttons-container {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+}
+
+.fake-link {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 13px;
+  color: $navy-primary-color;
+}
+
+.fake-link--danger {
+  color: $error-color;
+}
+

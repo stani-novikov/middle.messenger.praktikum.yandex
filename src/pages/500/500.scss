@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+
+.not-found {
+  padding-top: 100px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: $main-text;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: $main-text;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    color: $navy-primary-color;
+    text-decoration: none;
+  }
+}
